@@ -20,7 +20,7 @@ client = commands.Bot(command_prefix='!', intents=intents)
 async def on_ready():
 	print('Logged in as {0.user}'.format(client))
 	for guild in client.guilds:
-		print(f'{lenI(guild.mem)} Users in {guild.name}:')
+		print(f'{len(guild.members)} Users in {guild.name}:')
 		# for member in guild.members:
 			# print(f'{member.name}#{member.discriminator} (ID: {member.id})')
 
